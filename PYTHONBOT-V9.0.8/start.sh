@@ -16,8 +16,8 @@
 
 echo """
               
-Legendary PYTHONBOT-V9.0.8!!
-@Python_Userbot_Support
+Legendary DARKMAMBA!!
+@DARKMAMBA_SUPPORT
 """
 
 python3 -m userbot
