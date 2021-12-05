@@ -176,7 +176,7 @@ if ENV:
         if LOGGER_ID:
             LOGGER_ID = int(LOGGER_ID)
         FORCE_CHANNEL_ID = int(os.environ.get("FORCE_CHANNEL_ID", False))
-        EXTRA_PYTHONBOT = os.environ.get("EXTRA_PYTHONBOT", -1001221881562)
+        EXTRA_DARKMAMBA = os.environ.get("EXTRA_DARKMAMBA", -1001221881562)
         PM_DATA = os.environ.get("PM_DATA", "ENABLE")
 
 else:
