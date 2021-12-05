@@ -1,7 +1,7 @@
 version = 1
 
 [[analyzers]]
-name = "PYTHON"
+name = "DARKMAMBA"
 enabled = true
 dependency_file_paths = ["requirements.txt"]
 
