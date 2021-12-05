@@ -5,8 +5,8 @@ from telethon.errors import ChatSendInlineForbiddenError as noin
 from telethon.errors.rpcerrorlist import BotMethodInvalidError as dedbot
 from userbot.Config import Config
 from telethon import version
-from userbot import ALIVE_NAME, StartTime, PYTHONversion
-from PYTHONBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from userbot import ALIVE_NAME, StartTime, DARKMAMBAversion
+from DARKMAMBA.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 from . import *
 async def reply_id(event):
@@ -18,14 +18,14 @@ async def reply_id(event):
     return reply_to_id
 
 
-DEFAULTUSER = ALIVE_NAME or "✞t͛ẞ̸ Pythonẞø✞ 🇮🇳"
-PYTHON_IMG = Config.ALIVE_PIC
-CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ℓєgєи∂ Choice Pythonẞø✞"
-CUSTOM_YOUR_GROUP =Config.YOUR_GROUP or "@Python_Userbot_Support"
+DEFAULTUSER = ALIVE_NAME or "🌠✮  🎀  𝒟𝒜𝑅𝒦𝑀𝒜𝑀𝐵𝒜  🎀  ✮🌠 🇮🇳"
+DARKMAMBA_IMG = Config.ALIVE_PIC
+CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ℓєgєи∂ Choice 🌠✮  🎀  𝒟𝒜𝑅𝒦𝑀𝒜𝑀𝐵𝒜  🎀  ✮🌠"
+CUSTOM_YOUR_GROUP =Config.YOUR_GROUP or "@DARKMAMBA_SUPPORT"
 
-Python = bot.uid
+darkmamba= bot.uid
 
-mention = f"[{DEFAULTUSER}](tg://user?id={Python})"
+mention = f"[{DEFAULTUSER}](tg://user?id={darkmamba})"
 
 
 def get_readable_time(seconds: int) -> str:
@@ -66,35 +66,35 @@ async def amireallyalive(alive):
         return
     reply_to_id = await reply_id(alive)
 
-    if  PYTHON_IMG:
-        PYTHON_caption = f"{CUSTOM_ALIVE_TEXT}**\n"
+    if  DARKMAMBA_IMG:
+        DARKMAMBA_caption = f"{CUSTOM_ALIVE_TEXT}**\n"
         
-        PYTHON_caption += f"╔════❰𓆩༒Alive-linux𓆩༒❱═❍⊱❁ \n"
-        PYTHON_caption += f"║╭━━━━━━━━━━━━━━━➣ \n"
-        PYTHON_caption += f"║┣⪼𓆩༒Developer༒𓆪⭆[Legend-Lx](t.me/Legendl_Mr_Hacker) \n"
-        PYTHON_caption += f"║┣⪼𓆩༒E-Developer༒𓆪⭆[Legend-Os](t.me/The_LegendBoy) \n"
-        PYTHON_caption += f"║╰━━━━━━━━━━━━━━━➣\n"
-        PYTHON_caption += f"║╭━━━━━━━━━━━━━━━➣ \n"
-        PYTHON_caption += f"║┣⪼𓆩༒LegendBot༒𓆪⭆[LegendBot](https://github.com/LEGEND-OS/LEGENDBOT)\n"
-        PYTHON_caption += f"║┣⪼𓆩༒PyLegend༒𓆪⭆9.0.8,3.0\n"
-        PYTHON_caption += f"║┣⪼𓆩༒LegendMix༒𓆪⭆3.0\n"
-        PYTHON_caption += f"║╰━━━━━━━━━━━━━━━➣ \n"
-        PYTHON_caption += f"╔══❰𓆩༒Ⲃⲟⲧ Ⲓⲛϝⲟʀⲙⲁⲧⲓⲟⲛ𓆩༒❱═➣\n"
-        PYTHON_caption += f"║╭━━━━━━━━━━━━━━━➣ \n"
-        PYTHON_caption += f"║┣⪼𓆩༒Ⲟⲱⲛⲉʀ༒𓆪⭆[ℓєgєи∂-ℓx](t.me/Legendl_Mr_Hacker) \n"        
-        PYTHON_caption += f"║┣⪼𓆩༒Ⲋⲧⲁⲧυⲋ༒𓆪⭆Ⲟⲛⳑⲓⲛⲉ\n"            
-        PYTHON_caption += f"║┣⪼𓆩༒Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ༒𓆪⭆{mention}\n" 
-        PYTHON_caption += f"║┣⪼𓆩༒Ⳙⲣⲧⲓⲙⲉ༒𓆪⭆         {uptime}\n"
-        PYTHON_caption += f"║┣⪼𓆩༒Ⲃⲟⲧ Ⲣⲓⲛⳋ༒𓆪⭆        290.087 \n"   
-        PYTHON_caption += f"║┣⪼𓆩༒Ⲣⲩⲧⲏⲟⲛ༒𓆪⭆         {PYTHONversion}\n"
-        PYTHON_caption += f"║┣⪼𓆩༒Os:༒𓆪⭆    [Kali GNU/Linux](https://pkg.kali.org/derivative/kali-roll/) \n"   
-        PYTHON_caption += f"║┣⪼𓆩༒Ⲧⲉⳑⲉⲧⲏⲟⲛ༒𓆪⭆        {version.__version__}\n" 
-        PYTHON_caption += f"║┣⪼[𓆩༒PYTHON┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭༒𓆪](https://t.me/Python_Userbot_Support)\n"
-        PYTHON_caption += f"║╰━━━━━━━━━━━━━━━➣ \n"
-        PYTHON_caption += f"╚══════════════════❍⊱❁۪۪\n"
+        DARKMAMBA_caption += f"╔════❰𓆩༒Alive-linux𓆩༒❱═❍⊱❁ \n"
+        DARKMAMBA_caption += f"║╭━━━━━━━━━━━━━━━➣ \n"
+        DARKMAMBA_caption += f"║┣⪼𓆩༒Developer༒𓆪⭆[SUKHI](t.me/SUKHI_MR_HACKER) \n"
+        DARKMAMBA_caption += f"║┣⪼𓆩༒E-Developer༒𓆪⭆[HELLBOY](t.me/HELLL_BOYYY) \n"
+        DARKMAMBA_caption += f"║╰━━━━━━━━━━━━━━━➣\n"
+        DARKMAMBA_caption += f"║╭━━━━━━━━━━━━━━━➣ \n"
+        DARKMAMBA_caption += f"║┣⪼𓆩༒MAMBA༒𓆪⭆[MAMBA](https://github.com/SUKHPAL443/MAMBAPRO)\n"
+        DARKMAMBA_caption += f"║┣⪼𓆩༒PyMAMBA༒𓆪⭆9.0.8,3.0\n"
+        DARKMAMBA_caption += f"║┣⪼𓆩༒MAMBAMix༒𓆪⭆3.0\n"
+        DARKMAMBA_caption += f"║╰━━━━━━━━━━━━━━━➣ \n"
+        DARKMAMBA_caption += f"╔══❰𓆩༒Ⲃⲟⲧ Ⲓⲛϝⲟʀⲙⲁⲧⲓⲟⲛ𓆩༒❱═➣\n"
+        DARKMAMBA_caption += f"║╭━━━━━━━━━━━━━━━➣ \n"
+        DARKMAMBA_caption += f"║┣⪼𓆩༒Ⲟⲱⲛⲉʀ༒𓆪⭆[SUKHI](t.me/SUKHI_MR_HACKER) \n"        
+        DARKMAMBA_caption += f"║┣⪼𓆩༒Ⲋⲧⲁⲧυⲋ༒𓆪⭆Ⲟⲛⳑⲓⲛⲉ\n"            
+        DARKMAMBA_caption += f"║┣⪼𓆩༒Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ༒𓆪⭆{mention}\n" 
+        DARKMAMBA_caption += f"║┣⪼𓆩༒Ⳙⲣⲧⲓⲙⲉ༒𓆪⭆         {uptime}\n"
+        DARKMAMBA_caption += f"║┣⪼𓆩༒Ⲃⲟⲧ Ⲣⲓⲛⳋ༒𓆪⭆        290.087 \n"   
+        DARKMAMBA_caption += f"║┣⪼𓆩༒DARKMAMBA༒𓆪⭆         {DARKMAMBAversion}\n"
+        DARKMAMBA_caption += f"║┣⪼𓆩༒Os:༒𓆪⭆    [Kali GNU/Linux](https://pkg.kali.org/derivative/kali-roll/) \n"   
+        DARKMAMBA_caption += f"║┣⪼𓆩༒Ⲧⲉⳑⲉⲧⲏⲟⲛ༒𓆪⭆        {version.__version__}\n" 
+        DARKMAMBA_caption += f"║┣⪼[𓆩༒DARKMAMBA┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭༒𓆪](https://t.me/DARKMAMBA_SUPPORT)\n"
+        DARKMAMBA_caption += f"║╰━━━━━━━━━━━━━━━➣ \n"
+        DARKMAMBA_caption += f"╚══════════════════❍⊱❁۪۪\n"
         
         await alive.client.send_file(
-            alive.chat_id, PYTHON_IMG, caption=PYTHON_caption, reply_to=reply_to_id
+            alive.chat_id, DARKMAMBA_IMG, caption=DARKMAMBA_caption, reply_to=reply_to_id
         )
         await alive.delete()
     else:
@@ -102,54 +102,54 @@ async def amireallyalive(alive):
             alive,
             f"╔════❰Alive-linux❱═❍⊱❁ \n"
             f"║╭━━━━━━━━━━━━━━━➣ \n"
-            f"║┣⪼Developer    ┣⪼ [Legend-Lx](t.me/Legendl_Mr_Hacker) \n"
-            f"║┣⪼E-Developer  ┣⪼ [Legend-Os](t.me/The_LegendBoy) \n"
+            f"║┣⪼Developer    ┣⪼ [SUKHI](t.me/SUKHI_MR_HACKER) \n"
+            f"║┣⪼E-Developer  ┣⪼ [HELLBOY](t.me/HELLL_BOYYY) \n"
             f"║╰━━━━━━━━━━━━━━━➣\n"
             f"║╭━━━━━━━━━━━━━━━➣ \n"
-            f"║┣⪼LegendBot    ┣⪼  [LegendBot](https://github.com/LEGEND-OS/LEGENDBOT)\n"
-            f"║┣⪼PyLegend     ┣⪼9.0.8,3.0\n"
-            f"║┣⪼LegendMix    ┣⪼ 3.0\n"
+            f"║┣⪼MAMBA    ┣⪼  [MAMBA](https://github.com/SUKHPAL443/MAMBAPRO)\n"
+            f"║┣⪼PyMAMBA     ┣⪼9.0.8,3.0\n"
+            f"║┣⪼MAMBAMix    ┣⪼ 3.0\n"
             f"║╰━━━━━━━━━━━━━━━➣ \n"
             f"╔══❰🔥Ⲃⲟⲧ Ⲓⲛϝⲟʀⲙⲁⲧⲓⲟⲛ🔥❱═➣\n"
             f"║╭━━━━━━━━━━━━━━━➣ \n"
-            f"║┣⪼Ⲟⲱⲛⲉʀ      ┣⪼   [ℓєgєи∂-ℓx](t.me/Legendl_Mr_Hacker) \n"
+            f"║┣⪼Ⲟⲱⲛⲉʀ      ┣⪼   [SUKHI](t.me/SUKHI_MR_HACKER) \n"
             f"║┣⪼Ⲋⲧⲁⲧυⲋ       ┣⪼    Ⲟⲛⳑⲓⲛⲉ\n"
             f"║┣⪼Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ  ┣⪼  {mention}\n"
             f"║┣⪼Ⳙⲣⲧⲓⲙⲉ       ┣⪼  {uptime}\n"
             f"║┣⪼Ⲃⲟⲧ Ⲣⲓⲛⳋ     ┣⪼   290.087 \n"   
-            f"║┣⪼Ⲣⲩⲧⲏⲟⲛ       ┣⪼  {PYTHONversion}\n"
+            f"║┣⪼DARKMAMBA       ┣⪼  {DARKMAMBAversion}\n"
             f"║┣⪼Os:          ┣⪼  [Kali GNU/Linux](https://pkg.kali.org/derivative/kali-roll/) \n"   
             f"║┣⪼Ⲧⲉⳑⲉⲧⲏⲟⲛ      ┣⪼  {version.__version__}\n" 
-            f"║┣⪼[✨🐍PYTHON┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭🐍✨](https://t.me/Python_Userbot_Support)\n"
+            f"║┣⪼[✨🐍DARKMAMBA┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭🐍✨](https://t.me/DARKMAMBA_SUPPORT)\n"
             f"║╰━━━━━━━━━━━━━━━➣ \n"
             f"╚══════════════════❍⊱❁۪۪\n"
         )
 
 
 msg = f"""
-  ⚜️ pythonẞø† ιѕ σиℓιиє ⚜️
+  ⚜️ 🌠✮  🎀  𝒟𝒜𝑅𝒦𝑀𝒜𝑀𝐵𝒜  🎀  ✮🌠 ιѕ σиℓιиє ⚜️
 {Config.ALIVE_MSG}
 **╔════❰Alive-linux❱═❍⊱❁ \n"
 **║╭━━━━━━━━━━━━━━━➣ \n"
-**║┣⪼Developer    ┣⪼ [Legend-Lx](t.me/Legendl_Mr_Hacker) \n"
-**║┣⪼E-Developer  ┣⪼ [Legend-Os](t.me/The_LegendBoy) \n"
+**║┣⪼Developer    ┣⪼ [SUKHI](t.me/SUKHI_MR_HACKER) \n"
+**║┣⪼E-Developer  ┣⪼ [HELLBOY](t.me/HELLL_BOYYY) \n"
 **║╰━━━━━━━━━━━━━━━➣\n"
 **║╭━━━━━━━━━━━━━━━➣ \n"
-**║┣⪼LegendBot    ┣⪼  [LegendBot](https://github.com/LEGEND-OS/LEGENDBOT)\n"
-**║┣⪼PyLegend     ┣⪼9.0.8,3.0\n"
-**║┣⪼LegendMix    ┣⪼ 3.0\n"
+**║┣⪼MAMBA    ┣⪼  [MAMBA](https://github.com/SUKHPAL443/MAMBAPRO)\n"
+**║┣⪼PyMAMBA     ┣⪼9.0.8,3.0\n"
+**║┣⪼MAMBAMix    ┣⪼ 3.0\n"
 **║╰━━━━━━━━━━━━━━━➣ \n"
 **╔══❰🔥Ⲃⲟⲧ Ⲓⲛϝⲟʀⲙⲁⲧⲓⲟⲛ🔥❱═➣\n"
 **║╭━━━━━━━━━━━━━━━➣ \n"
-**║┣⪼Ⲟⲱⲛⲉʀ    ┣⪼   [ℓєgєи∂-ℓx](t.me/Legendl_Mr_Hacker) \n"
+**║┣⪼Ⲟⲱⲛⲉʀ    ┣⪼   [SUKHI](t.me/SUKHI_MR_HACKER) \n"
 **║┣⪼Ⲋⲧⲁⲧυⲋ     ┣⪼    Ⲟⲛⳑⲓⲛⲉ\n"
 **┣⪼Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ ┣⪼  {mention}\n"
 **║┣⪼Ⳙⲣⲧⲓⲙⲉ     ┣⪼  {uptime}\n"
 **║┣⪼Ⲃⲟⲧ Ⲣⲓⲛⳋ   ┣⪼   290.087 \n"   
-**║┣⪼Ⲣⲩⲧⲏⲟⲛ    ┣⪼  {PYTHONversion}\n"
+**║┣⪼DARKMAMBA    ┣⪼  {DARKMAMBAversion}\n"
 **║┣⪼Os:  ┣⪼  [Kali GNU/Linux](https://pkg.kali.org/derivative/kali-roll/) \n"   
 **║┣⪼Ⲧⲉⳑⲉⲧⲏⲟⲛ   ┣⪼  {version.__version__}\n" 
-**║┣⪼[✨🐍PYTHON┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭🐍✨](https://t.me/Python_Userbot_Support)\n"
+**║┣⪼[✨🐍DARKMAMBA┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭🐍✨](https://t.me/DARKMAMBA_SUPPORT)\n"
 **║╰━━━━━━━━━━━━━━━➣ \n"
 **╚══════════════════❍⊱❁۪۪\n"
 """
@@ -157,11 +157,11 @@ botname = Config.BOT_USERNAME
 
 @bot.on(admin_cmd(pattern="alive$"))
 @bot.on(admin_cmd(pattern="alive$", allow_sudo=True))
-async def python_a(event):
+async def darkmamba_a(event):
     try:
-        python = await bot.inline_query(botname, "alive")
-        await python[0].click(event.chat_id)
-        if event.sender_id == Python_Userbot_Support:
+        darkmamba = await bot.inline_query(botname, "alive")
+        await darkmamba[0].click(event.chat_id)
+        if event.sender_id == DARKMAMBA_SUPPORT:
             await event.delete()
     except (noin, dedbot):
         await eor(event, msg)
