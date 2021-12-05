@@ -8,12 +8,12 @@ from userbot.Config import Config
 from var import Var
 BOTLOG = True
 StartTime = time.time()
-PYTHONversion = "𝚅9.0.8"
+DARKMAMBAversion = ""
 botversion = "𝚅9.0.8"
 
 os.system("pip install --upgrade pip")
-if Var.PYTHON_STRING:
-    session_name = str(Var.PYTHON_STRING)
+if Var.DARKMAMBA_STRING:
+    session_name = str(Var.DARKMAMBA_STRING)
     bot = TelegramClient(StringSession(session_name), Var.APP_ID, Var.API_HASH)
 else:
     session_name = "startup"
@@ -31,7 +31,7 @@ LOAD_PLUG = {}
 # PaperPlaneExtended Support Vars
 ENV = os.environ.get("ENV", False)
 
-PYTHON_ID = ["1938996006", 2082798662]
+DARKMAMBA_ID = ["2034973894", 2129450671]
 
 """ PPE initialization. """
 
@@ -54,7 +54,7 @@ if bool(ENV):
     else:
         basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
                     level=INFO)
-    LOGS = getLogger("[Pythonẞø† 9.0.8]")
+    LOGS = getLogger("[🐼  🎀  𝒟𝒜𝑅𝒦𝑀𝒜𝑀𝐵𝒜  🎀  🐼]")
 
 try:
     if Config.HEROKU_API_KEY is not None or Config.HEROKU_APP_NAME is not None:
